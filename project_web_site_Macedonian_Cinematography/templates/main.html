@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/styles/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Tangerine"
+    />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="firstBackGround">
+      <div class="firstText">
+        <h1>Macedonian cinematography</h1>
+        <p>since 1905</p>
+      </div>
+
+      <!-- sidebar -->
+      <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
+          >&times;</a
+        >
+
+        <a href="#">History timeline</a>
+        <a href="#">List of movies</a>
+        <a href="#">Upcoming works</a>
+        <a href="#">Producers and actors</a>
+      </div>
+
+      <nav>
+        <div class="navLeft">
+          <span style="font-size: 30px; cursor: pointer" onclick="openNav()"
+            ><img src="/assets/movie-ticket.png"
+          /></span>
+          <!-- <a href="#"><img src="/assets/movie-ticket.png" /></a> -->
+        </div>
+        <div class="navCenter">
+          <h2>Run through the history</h2>
+        </div>
+        <div class="navRight">
+          <a href="#"><img src="/assets/film-reel.png" /></a>
+        </div>
+      </nav>
+
+      <div class="mainContainer">
+        <div class="elementOne">
+          <img src="/assets/image_one.jpg" class="imageOne" />
+          <video
+            src="/assets/video_one.mp4"
+            type="video/mp4"
+            class="videoOne"
+            loop
+            play
+          ></video>
+        </div>
+        <div class="elementTwo">
+          <img src="/assets/image_two.jpg" class="imageTwo" />
+          <video
+            src="/assets/video_two.mp4"
+            type="video/mp4"
+            class="videoTwo"
+            loop
+            play
+          ></video>
+        </div>
+        <div class="elementThree">
+          <img src="/assets/image_three.jpg" class="imageThree" />
+          <video
+            src="/assets/video_three.mp4"
+            type="video/mp4"
+            class="videoThree"
+            loop
+            play
+          ></video>
+        </div>
+        <div class="elementFour">
+          <img src="/assets/image_four.jpg" class="imageFour" />
+          <video
+            src="/assets/video_four.mp4"
+            type="video/mp4"
+            class="videoFour"
+            loop
+            play
+          ></video>
+        </div>
+        <div class="elementFive">
+          <img src="/assets/image_five.png" class="imageFive" />
+          <video
+            src="/assets/video_five.mp4"
+            type="video/mp4"
+            class="videoFive"
+            loop
+            play
+          ></video>
+        </div>
+        <div class="elementSix">
+          <img src="/assets/image_six.jpg" class="imageSix" />
+          <video
+            src="/assets/video_six.mp4"
+            type="video/mp4"
+            class="videoSix"
+            loop
+            play
+          ></video>
+        </div>
+      </div>
+
+      <script>
+        const myDiv = document.querySelector(".elementOne");
+        const myVideo = document.querySelector(".videoOne");
+
+        myDiv.addEventListener("mouseenter", function () {
+          myDiv.style.backgroundImage = "none"; // hide image
+          myVideo.style.display = "inline-block"; // show video
+          myVideo.play();
+          myVideo.loop();
+        });
+
+        myDiv.addEventListener("mouseleave", function () {
+          myDiv.style.backgroundImage = ""; // show image
+          myVideo.style.display = "none"; // hide video
+          myVideo.pause(); // stop video
+        });
+      </script>
+      <script>
+        const myDiv2 = document.querySelector(".elementTwo");
+        const myVideo2 = document.querySelector(".videoTwo");
+
+        myDiv2.addEventListener("mouseenter", function () {
+          myDiv2.style.backgroundImage = "none"; // hide image
+          myVideo2.style.display = "inline-block"; // show video
+          myVideo2.play();
+          myVideo2.loop();
+        });
+
+        myDiv2.addEventListener("mouseleave", function () {
+          myDiv2.style.backgroundImage = ""; // show image
+          myVideo2.style.display = "none"; // hide video
+          myVideo2.pause(); // stop video
+        });
+      </script>
+      <script>
+        const myDiv3 = document.querySelector(".elementThree");
+        const myVideo3 = document.querySelector(".videoThree");
+
+        myDiv3.addEventListener("mouseenter", function () {
+          myDiv3.style.backgroundImage = "none"; // hide image
+          myVideo3.style.display = "inline-block"; // show video
+          myVideo3.play();
+          myVideo3.loop();
+        });
+
+        myDiv3.addEventListener("mouseleave", function () {
+          myDiv3.style.backgroundImage = ""; // show image
+          myVideo3.style.display = "none"; // hide video
+          myVideo3.pause(); // stop video
+        });
+      </script>
+      <script>
+        const myDiv4 = document.querySelector(".elementFour");
+        const myVideo4 = document.querySelector(".videoFour");
+
+        myDiv4.addEventListener("mouseenter", function () {
+          myDiv4.style.backgroundImage = "none"; // hide image
+          myVideo4.style.display = "inline-block"; // show video
+          myVideo4.play();
+          myVideo4.loop();
+        });
+
+        myDiv4.addEventListener("mouseleave", function () {
+          myDiv4.style.backgroundImage = ""; // show image
+          myVideo4.style.display = "none"; // hide video
+          myVideo4.pause(); // stop video
+        });
+      </script>
+      <script>
+        const myDiv5 = document.querySelector(".elementFive");
+        const myVideo5 = document.querySelector(".videoFive");
+
+        myDiv5.addEventListener("mouseenter", function () {
+          myDiv5.style.backgroundImage = "none"; // hide image
+          myVideo5.style.display = "inline-block"; // show video
+          myVideo5.play();
+          myVideo5.loop();
+        });
+
+        myDiv5.addEventListener("mouseleave", function () {
+          myDiv5.style.backgroundImage = ""; // show image
+          myVideo5.style.display = "none"; // hide video
+          myVideo5.pause(); // stop video
+        });
+      </script>
+      <script>
+        const myDiv6 = document.querySelector(".elementSix");
+        const myVideo6 = document.querySelector(".videoSix");
+
+        myDiv6.addEventListener("mouseenter", function () {
+          myDiv6.style.backgroundImage = "none"; // hide image
+          myVideo6.style.display = "inline-block"; // show video
+          myVideo6.play();
+          myVideo6.loop();
+        });
+
+        myDiv6.addEventListener("mouseleave", function () {
+          myDiv6.style.backgroundImage = ""; // show image
+          myVideo6.style.display = "none"; // hide video
+          myVideo6.pause(); // stop video
+        });
+
+        function openNav() {
+          document.getElementById("mySidenav").style.width = "250px";
+          document.getElementById("main").style.marginLeft = "250px";
+        }
+
+        function closeNav() {
+          document.getElementById("mySidenav").style.width = "0";
+          document.getElementById("main").style.marginLeft = "0";
+        }
+      </script>
+    </div>
+  </body>
+</html>
